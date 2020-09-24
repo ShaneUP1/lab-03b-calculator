@@ -9,7 +9,7 @@ const addResult = document.getElementById('add-result');
 addButton.addEventListener('click', () => {
     const num1 = Number(addInput1.value);
     const num2 = Number(addInput2.value);
-    addResult.textContent = num1 + num2;
+    addResult.textContent= (num1 + num2).toFixed(3);
 })
 
 // Subtraction
@@ -22,7 +22,7 @@ const subResult = document.getElementById('sub-result');
 subButton.addEventListener('click', () => {
     const num1 = Number(subInput1.value);
     const num2 = Number(subInput2.value);
-    subResult.textContent = num1 - num2;
+    subResult.textContent = (num1 - num2).toFixed(3);
 })
 
 // Multiplication
@@ -35,7 +35,7 @@ const multResult = document.getElementById('mult-result');
 multButton.addEventListener('click', () => {
     const num1 = Number(multInput1.value);
     const num2 = Number(multInput2.value);
-    multResult.textContent = num1 * num2;
+    multResult.textContent = (num1 * num2).toFixed(3);
 })
 
 // Division
@@ -48,7 +48,7 @@ const divResult = document.getElementById('div-result');
 divButton.addEventListener('click', () => {
     const num1 = Number(divInput1.value);
     const num2 = Number(divInput2.value);
-    divResult.textContent = num1 / num2;
+    divResult.textContent = (num1 / num2).toFixed(3);
 })
 
 
